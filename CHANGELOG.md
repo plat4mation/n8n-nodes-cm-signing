@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0 (2026-11-05)
+
+- Published as `@plat4mation/n8n-nodes-cm-signing` through npm trusted publishing (OIDC) with provenance. No functional changes from 0.1.0.
+
 ## 0.1.0 (2026-11-05)
 
 Initial release.

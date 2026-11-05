@@ -1,6 +1,6 @@
 {
   "name": "@plat4mation/n8n-nodes-cm-signing",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "n8n community node for the CM.com Sign digital signing API",
   "license": "MIT",
   "homepage": "https://github.com/plat4mation/n8n-nodes-cm-signing#readme",
@@ -13,10 +13,21 @@
     "esignature",
     "dossier"
   ],
-  "author": { "name": "Luc Raeskin", "email": "luc.raeskin@plat4mation.com" },
-  "repository": { "type": "git", "url": "git+https://github.com/plat4mation/n8n-nodes-cm-signing.git" },
-  "bugs": { "url": "https://github.com/plat4mation/n8n-nodes-cm-signing/issues" },
-  "publishConfig": { "access": "public", "provenance": true },
+  "author": {
+    "name": "Luc Raeskin",
+    "email": "luc.raeskin@plat4mation.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plat4mation/n8n-nodes-cm-signing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plat4mation/n8n-nodes-cm-signing/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "n8n-node build",
     "build:watch": "tsc --watch",
@@ -27,11 +38,15 @@
     "release": "n8n-node release",
     "prepublishOnly": "n8n-node prerelease"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "n8n": {
     "n8nNodesApiVersion": 1,
     "strict": true,
-    "credentials": ["dist/credentials/CmSignApi.credentials.js"],
+    "credentials": [
+      "dist/credentials/CmSignApi.credentials.js"
+    ],
     "nodes": [
       "dist/nodes/CmSign/CmSign.node.js",
       "dist/nodes/CmSignTrigger/CmSignTrigger.node.js",
@@ -45,5 +60,7 @@
     "release-it": "20.2.0",
     "typescript": "5.9.3"
   },
-  "peerDependencies": { "n8n-workflow": "*" }
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
 }
