@@ -71,6 +71,8 @@ jobs:
       id-token: write
       # Scoped down from the default (write) for least-privilege publishing.
       contents: read
+      # Required to mirror the release to GitHub Packages.
+      packages: write
 
     steps:
       - uses: actions/checkout@v4
@@ -97,3 +99,16 @@ jobs:
           npm run release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Mirror to GitHub Packages
+        # Lists the release under the repository's Packages. Runs after the npm
+        # publish so dist/ is already built. Provenance is an npmjs.com feature,
+        # so it is dropped for this copy only (the npm release keeps it);
+        # RELEASE_MODE satisfies the prepublishOnly guard (n8n-node prerelease).
+        run: |
+          npm pkg delete publishConfig.provenance
+          npm config set //npm.pkg.github.com/:_authToken "$NODE_AUTH_TOKEN"
+          npm publish --registry=https://npm.pkg.github.com
+        env:
+          RELEASE_MODE: 'true'
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
