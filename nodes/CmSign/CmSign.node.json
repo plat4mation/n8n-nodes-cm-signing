@@ -1,0 +1,12 @@
+{
+  "node": "n8n-nodes-cm-signing",
+  "nodeVersion": "1.0",
+  "codexVersion": "1.0",
+  "categories": ["Utility"],
+  "subcategories": { "Utility": ["Helpers"] },
+  "alias": ["CM.com", "CM Sign", "cm.com sign", "dossier"],
+  "resources": {
+    "credentialDocumentation": [{ "url": "https://developers.cm.com/sign/docs/getting-started" }],
+    "primaryDocumentation": [{ "url": "https://developers.cm.com/sign/docs/introduction" }]
+  }
+}

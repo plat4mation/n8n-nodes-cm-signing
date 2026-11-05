@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.DS_Store
+*.tsbuildinfo
+.env
+
+# Agent skills are installed per-machine, not vendored into the repo
+.agents/
+.claude/
+
+# Local n8n runtime used by scripts/dev-tunnel.sh
+.n8n-dev/node_modules
+.n8n-dev/package-lock.json
+
+# Internal status notes, kept local
+Roadmap.md
+.superpowers/
+CLAUDE.md
+docs/superpowers/
+AGENTS.md
+skills-lock.json
