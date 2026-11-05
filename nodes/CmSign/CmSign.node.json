@@ -1,5 +1,5 @@
 {
-  "node": "n8n-nodes-cm-signing",
+  "node": "@plat4mation/n8n-nodes-cm-signing",
   "nodeVersion": "1.0",
   "codexVersion": "1.0",
   "categories": ["Utility"],

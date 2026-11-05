@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-cm-signing",
+  "name": "@plat4mation/n8n-nodes-cm-signing",
   "version": "0.1.0",
   "description": "n8n community node for the CM.com Sign digital signing API",
   "license": "MIT",

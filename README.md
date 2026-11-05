@@ -1,4 +1,4 @@
-# n8n-nodes-cm-signing
+# @plat4mation/n8n-nodes-cm-signing
 
 This is an n8n community node package for the [CM.com Sign](https://developers.cm.com/sign/docs/introduction) digital signing API. It lets you upload PDFs, create signing dossiers, invite people to sign, download signed results, and react to signing events in your n8n workflows.
 
@@ -26,7 +26,7 @@ The package ships three nodes and one credential:
 
 ## Installation
 
-Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation, and install `n8n-nodes-cm-signing`.
+Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation, and install `@plat4mation/n8n-nodes-cm-signing`.
 
 ## Credentials
 

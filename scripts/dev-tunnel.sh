@@ -54,7 +54,7 @@ cleanup() {
 trap cleanup EXIT INT TERM
 
 # 1. Ensure the node is symlinked into n8n's custom folder.
-mkdir -p "$CUSTOM_DIR"
+mkdir -p "$(dirname "$LINK_PATH")"
 if [ ! -e "$LINK_PATH" ]; then
 	ln -s "$REPO_DIR" "$LINK_PATH"
 	echo "Linked $PKG_NAME -> $LINK_PATH"
